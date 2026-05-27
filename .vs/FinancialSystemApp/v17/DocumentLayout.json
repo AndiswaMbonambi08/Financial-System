@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\services\\iriskassessmentextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\services\\iriskassessmentextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\services\\financialaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\services\\financialaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\services\\aiorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\services\\aiorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\data\\financialdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\data\\financialdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\controllers\\generalledgercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\controllers\\generalledgercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|c:\\users\\andiswa mbonambi\\desktop\\financialsystemapp\\financialsystemapp\\financialsystemapp\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63103E0-DF33-40AA-A41E-0B3B9EADC67A}|FinancialSystemApp\\FinancialSystemApp.csproj|solutionrelative:financialsystemapp\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Startup.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Startup.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Startup.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:39:28.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:32:14.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRiskAssessmentExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\IRiskAssessmentExtension.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Services\\IRiskAssessmentExtension.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\IRiskAssessmentExtension.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Services\\IRiskAssessmentExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:23:43.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\Account.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Models\\Account.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAA7wEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:34:17.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\Transaction.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Models\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:43:15.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Program.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Program.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:39:08.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\TransactionService.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Services\\TransactionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:38:28.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Services\\ReportService.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\ReportService.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Services\\ReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:38:08.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FinancialAIService.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\FinancialAIService.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Services\\FinancialAIService.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\FinancialAIService.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Services\\FinancialAIService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:37:34.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AIOrchestrator.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\AIOrchestrator.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Services\\AIOrchestrator.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Services\\AIOrchestrator.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Services\\AIOrchestrator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:36:41.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:35:40.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FinancialDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Data\\FinancialDbContext.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Data\\FinancialDbContext.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Data\\FinancialDbContext.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Data\\FinancialDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:33:55.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:33:04.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SalesController.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\SalesController.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Controllers\\SalesController.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\SalesController.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Controllers\\SalesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:28:34.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GeneralLedgerController.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\GeneralLedgerController.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Controllers\\GeneralLedgerController.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Controllers\\GeneralLedgerController.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Controllers\\GeneralLedgerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:29:09.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "FinancialSystemApp\\Models\\Report.cs",
+              "ToolTip": "C:\\Users\\Andiswa Mbonambi\\Desktop\\FinancialSystemApp\\FinancialSystemApp\\FinancialSystemApp\\Models\\Report.cs",
+              "RelativeToolTip": "FinancialSystemApp\\Models\\Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T01:36:17.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
