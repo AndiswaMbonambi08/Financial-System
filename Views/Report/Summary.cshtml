@@ -1,0 +1,98 @@
+﻿using Financial_System.ViewModels;
+
+<h1>Financial Summary Report</h1>
+
+<div class="card mb-20">
+    <div class="card-body">
+        <form method="get" class="form-row">
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" name="startDate" id="startDate" value="@Model?.StartDate.ToString("yyyy-MM-dd")">
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="date" name="endDate" id="endDate" value="@Model?.EndDate.ToString("yyyy-MM-dd")">
+            </div>
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model != null)
+{
+    <div class="grid">
+        <div class="stat-box">
+            <div class="stat-label">Total Income</div>
+            <div class="stat-value" style="color: var(--primary-green);">R @Model.TotalIncome.ToString("F2")</div>
+            <div class="stat-change">Period: @Model.StartDate.ToString("dd/MM") - @Model.EndDate.ToString("dd/MM")</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-label">Total Expenses</div>
+            <div class="stat-value" style="color: #D32F2F;">R @Model.TotalExpenses.ToString("F2")</div>
+            <div class="stat-change">Spent</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-label">Net Income</div>
+            <div class="stat-value" style="@(Model.NetIncome >= 0 ? "color: var(--primary-green);" : "color: #D32F2F;")">
+                R @Model.NetIncome.ToString("F2")
+            </div>
+            <div class="stat-change @(Model.NetIncome >= 0 ? "positive" : "negative")">
+                @(Model.NetIncome >= 0 ? "Surplus" : "Deficit")
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-label">Savings Rate</div>
+            <div class="stat-value">
+                @(Model.TotalIncome > 0 ? ((Model.NetIncome / Model.TotalIncome) * 100).ToString("F1") : "0")%
+            </div>
+            <div class="stat-change">Of Income</div>
+        </div>
+    </div>
+
+    @if (Model.Transactions != null && Model.Transactions.Count > 0)
+    {
+        <div class="card">
+            <div class="card-header">
+                <h2>Transactions</h2>
+            </div>
+            <div class="card-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var transaction in Model.Transactions)
+                        {
+                            <tr>
+                                <td>@transaction.TransactionDate.ToString("dd/MM/yyyy")</td>
+                                <td>@transaction.Description</td>
+                                <td>@(transaction.TransactionCategory?.CategoryName ?? "-")</td>
+                                <td class="@(transaction.TransactionType == "Income" ? "text-success" : "text-danger")">
+                                    R @transaction.Amount.ToString("F2")
+                                </td>
+                                <td>
+                                    <span class="badge @(transaction.TransactionType == "Income" ? "badge-success" : "badge-danger")">
+                                        @transaction.TransactionType
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+}
+

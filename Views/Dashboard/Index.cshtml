@@ -1,0 +1,239 @@
+﻿using Financial_System.ViewModels;
+@using Financial_System.ViewModels
+@using System.Text.Json
+@using System.Linq
+
+
+
+<h1>Financial Dashboard</h1>
+
+<div class="grid">
+    <div class="stat-box">
+        <div class="stat-label">Total Balance</div>
+        <div class="stat-value">R @Model.TotalBalance.ToString("F2")</div>
+        <div class="stat-change positive">Updated Now</div>
+    </div>
+
+    <div class="stat-box">
+        <div class="stat-label">Total Accounts</div>
+        <div class="stat-value">@Model.TotalAccounts</div>
+        <div class="stat-change">Active Accounts</div>
+    </div>
+
+    <div class="stat-box">
+        <div class="stat-label">This Month Income</div>
+        <div class="stat-value" style="color: #00AA44;">R @(Model.MonthlyExpenses.FirstOrDefault()?.Income ?? 0).ToString("F2")</div>
+        <div class="stat-change positive">Tracked</div>
+    </div>
+
+    <div class="stat-box">
+        <div class="stat-label">This Month Expenses</div>
+        <div class="stat-value" style="color: #D32F2F;">R @(Model.MonthlyExpenses.FirstOrDefault()?.Expenses ?? 0).ToString("F2")</div>
+        <div class="stat-change">Spent</div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <div class="card-header">
+            <h2>Recent Transactions</h2>
+        </div>
+        <div class="card-body">
+            @if (Model.RecentTransactions != null && Model.RecentTransactions.Count > 0)
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var transaction in Model.RecentTransactions)
+                        {
+                            <tr>
+                                <td>@transaction.TransactionDate.ToString("dd/MM/yyyy")</td>
+                                <td>@transaction.Description</td>
+                                <td>@(transaction.TransactionCategory?.CategoryName ?? "N/A")</td>
+                                <td class="@(transaction.TransactionType == "Income" ? "text-success" : "text-danger")">
+                                    R @transaction.Amount.ToString("F2")
+                                </td>
+                                <td>
+                                    <span class="badge @(transaction.TransactionType == "Income" ? "badge-success" : "badge-danger")">
+                                        @transaction.TransactionType
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="text-center">No transactions yet. <a href="/Transaction/Create">Create one now</a></p>
+            }
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Accounts Overview</h2>
+        </div>
+        <div class="card-body">
+            @if (Model.Accounts != null && Model.Accounts.Count > 0)
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Account Name</th>
+                            <th>Type</th>
+                            <th>Balance</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var account in Model.Accounts)
+                        {
+                            <tr>
+                                <td><strong>@account.AccountName</strong></td>
+                                <td>@account.AccountType</td>
+                                <td class="text-success"><strong>R @account.CurrentBalance.ToString("F2")</strong></td>
+                                <td>
+                                    <a href="/Account/Details/@account.AccountId" class="btn btn-small btn-secondary">View</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="text-center">No accounts yet. <a href="/Account/Create">Create one now</a></p>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <div class="card-header">
+            <h2>Monthly Income vs Expenses</h2>
+        </div>
+        <div class="card-body">
+            <canvas id="monthlyChart" style="max-height: 300px;"></canvas>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Spending by Category</h2>
+        </div>
+        <div class="card-body">
+            <canvas id="categoryChart" style="max-height: 300px;"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h2>Quick Actions</h2>
+    </div>
+    <div class="card-body">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+            <a href="/Transaction/Create" class="btn btn-primary" style="display: block; text-align: center; text-decoration: none;">
+                Add Transaction
+            </a>
+            <a href="/Account/Create" class="btn btn-primary" style="display: block; text-align: center; text-decoration: none;">
+                Create Account
+            </a>
+            <a href="/Report/Summary" class="btn btn-primary" style="display: block; text-align: center; text-decoration: none;">
+                View Reports
+            </a>
+            <a href="/Report/CategoryAnalysis" class="btn btn-primary" style="display: block; text-align: center; text-decoration: none;">
+                Category Analysis
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Monthly Chart
+        const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+        const monthlyData = @Html.Raw(JsonSerializer.Serialize(Model.MonthlyExpenses ?? new List<MonthlyData>()));
+
+        new Chart(monthlyCtx, {
+            type: 'bar',
+            data: {
+                labels: monthlyData.map(d => d.month),
+                datasets: [
+                    {
+                        label: 'Income',
+                        data: monthlyData.map(d => d.income),
+                        backgroundColor: '#00AA44',
+                        borderColor: '#008833',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Expenses',
+                        data: monthlyData.map(d => d.expenses),
+                        backgroundColor: '#FFE0E0',
+                        borderColor: '#D32F2F',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return 'R' + value;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Category Chart
+        const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+        const categoryData = @Html.Raw(JsonSerializer.Serialize(Model.CategoryBreakdown ?? new List<CategoryData>()));
+
+        const colors = ['#00AA44', '#00CC55', '#33DD77', '#66EE99', '#99FFBB', '#E8F5E8'];
+
+        new Chart(categoryCtx, {
+            type: 'doughnut',
+            data: {
+                labels: categoryData.map(d => d.category),
+                datasets: [{
+                    data: categoryData.map(d => d.amount),
+                    backgroundColor: colors,
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+    </script>
+}
+

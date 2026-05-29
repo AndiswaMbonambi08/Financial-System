@@ -1,0 +1,64 @@
+﻿@model Account
+
+@{
+    ViewData["Title"] = "Create Account";
+}
+
+<h1>Create New Account</h1>
+
+<div class="card" style="max-width: 600px;">
+    <div class="card-body">
+        <form method="post" action="/Account/Create">
+            <div class="form-group">
+                <label for="AccountName">Account Name</label>
+                <input type="text" name="AccountName" id="AccountName" placeholder="e.g., My Savings" required value="@Model?.Name">
+            </div>
+
+            <div class="form-group">
+                <label for="AccountType">Account Type</label>
+                <select name="AccountType" id="AccountType" required>
+                    <option value="">-- Select Type --</option>
+                    <option value="Checking">Checking</option>
+                    <option value="Savings">Savings</option>
+                    <option value="Investment">Investment</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Loan">Loan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="CurrentBalance">Opening Balance</label>
+                <input type="number" name="CurrentBalance" id="CurrentBalance" step="0.01" min="0" placeholder="0.00" required value="@Model?.CurrentBalance">
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: 25px;">
+                <button type="submit" class="btn btn-primary">Create Account</button>
+                <a href="/Account" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card" style="max-width: 600px; margin-top: 30px; background-color: #F0F8F0; border-left: 4px solid var(--primary-green);">
+    <div class="card-body">
+        <h3 style="color: var(--primary-green); margin-top: 0;">Account Types</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid var(--border-color);">
+                <strong>Checking:</strong> Daily spending account
+            </li>
+            <li style="margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid var(--border-color);">
+                <strong>Savings:</strong> Long-term savings account
+            </li>
+            <li style="margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid var(--border-color);">
+                <strong>Investment:</strong> Investment portfolio
+            </li>
+            <li style="margin-bottom: 8px; padding: 5px 0; border-bottom: 1px solid var(--border-color);">
+                <strong>Credit Card:</strong> Credit card balance
+            </li>
+            <li style="padding: 5px 0;">
+                <strong>Loan:</strong> Loan or debt account
+            </li>
+        </ul>
+    </div>
+</div>
+

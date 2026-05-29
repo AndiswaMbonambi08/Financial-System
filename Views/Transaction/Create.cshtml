@@ -1,0 +1,74 @@
+﻿@model Transaction
+
+@{
+    ViewData["Title"] = "Add Transaction";
+}
+
+<h1>Add New Transaction</h1>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="/Transaction/Create">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="AccountId">Account</label>
+                    <select name="AccountId" id="AccountId" required>
+                        <option value="">-- Select Account --</option>
+                        @foreach (var account in (List<Account>)ViewBag.Accounts)
+                        {
+                            <option value="@account.AccountId">@account.Name (@account.AccountType)</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="TransactionType">Type</label>
+                    <select name="TransactionType" id="TransactionType" required>
+                        <option value="">-- Select Type --</option>
+                        <option value="Income">Income</option>
+                        <option value="Expense">Expense</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Amount">Amount</label>
+                    <input type="number" name="Amount" id="Amount" step="0.01" min="0" required placeholder="0.00">
+                </div>
+
+                <div class="form-group">
+                    <label for="TransactionDate">Date</label>
+                    <input type="datetime-local" name="TransactionDate" id="TransactionDate" required value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="TransactionCategoryId">Category</label>
+                <select name="TransactionCategoryId" id="TransactionCategoryId" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="1">Income</option>
+                    <option value="2">Salary</option>
+                    <option value="3">Food & Dining</option>
+                    <option value="4">Transportation</option>
+                    <option value="5">Utilities</option>
+                    <option value="6">Shopping</option>
+                    <option value="7">Entertainment</option>
+                    <option value="8">Healthcare</option>
+                    <option value="9">Education</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <textarea name="Description" id="Description" placeholder="Enter transaction details..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button type="submit" class="btn btn-primary">Create Transaction</button>
+                <a href="/Transaction" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Management System - Professional Finance Tracking</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <span style="color: var(--primary-green); margin-right: 5px;">&#9679;</span>
+                Financial System
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="/" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Dashboard" ? "active" : "")">Dashboard</a></li>
+                <li><a href="/Account" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Account" ? "active" : "")">Accounts</a></li>
+                <li><a href="/Transaction" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Transaction" ? "active" : "")">Transactions</a></li>
+                <li><a href="/Report" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Report" ? "active" : "")">Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["Success"]
+                </div>
+            }
+
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["Error"]
+                </div>
+            }
+
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>Professional financial management solution for tracking income, expenses, and generating insightful reports.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Features</h4>
+                <ul>
+                    <li><a href="#">Transaction Management</a></li>
+                    <li><a href="#">Account Management</a></li>
+                    <li><a href="#">Financial Reports</a></li>
+                    <li><a href="#">Analytics Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Financial Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.alert').forEach(alert => {
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

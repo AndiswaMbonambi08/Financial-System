@@ -1,0 +1,62 @@
+﻿@model List<Account>
+
+@{
+    ViewData["Title"] = "Accounts";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-20">
+    <h1>Accounts</h1>
+    <a href="/Account/Create" class="btn btn-primary">Create New Account</a>
+</div>
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="grid">
+        @foreach (var account in Model)
+        {
+            <div class="card">
+                <div class="card-header" style="border-bottom: 2px solid var(--light-green); padding-bottom: 10px;">
+                    <h3 style="margin: 0;">@account.Name</h3>
+                    <small style="color: var(--text-gray);">@account.AccountType</small>
+                </div>
+                <div class="card-body">
+                    <div style="margin-bottom: 15px;">
+                        <div style="color: var(--text-gray); font-size: 12px; text-transform: uppercase;">Current Balance</div>
+                        <div style="font-size: 24px; font-weight: 700; color: var(--primary-green); margin-top: 5px;">
+                            R @account.CurrentBalance.ToString("F2")
+                        </div>
+                    </div>
+
+                    <table style="width: 100%; font-size: 13px;">
+                        <tr>
+                            <td style="padding: 5px 0; border: none; color: var(--text-gray);">Created</td>
+                            <td style="padding: 5px 0; border: none; text-align: right;">@account.CreatedDate.ToString("dd/MM/yyyy")</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 0; border: none; color: var(--text-gray);">Status</td>
+                            <td style="padding: 5px 0; border: none; text-align: right;">
+                                <span class="badge badge-success">Active</span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="/Account/Details/@account.AccountId" class="btn btn-primary" style="flex: 1; text-align: center; text-decoration: none;">View</a>
+                        <a href="/Account/Edit/@account.AccountId" class="btn btn-secondary" style="flex: 1; text-align: center; text-decoration: none;">Edit</a>
+                        <a href="/Account/Delete/@account.AccountId" class="btn btn-danger" style="flex: 1; text-align: center; text-decoration: none;">Delete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body text-center">
+            <p style="margin-bottom: 20px;">You haven't created any accounts yet.</p>
+            <a href="/Account/Create" class="btn btn-primary">Create Your First Account</a>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,163 @@
+﻿using Financial_System.ViewModels;
+
+@using System.Text.Json
+
+
+
+
+<h1>Spending by Category Analysis</h1>
+
+<div class="card mb-20">
+    <div class="card-body">
+        <form method="get" class="form-row">
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" name="startDate" id="startDate" value="@Model?.StartDate.ToString("yyyy-MM-dd")">
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="date" name="endDate" id="endDate" value="@Model?.EndDate.ToString("yyyy-MM-dd")">
+            </div>
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <button type="submit" class="btn btn-primary">Analyze</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model != null && Model.CategoryData != null && Model.CategoryData.Count > 0)
+{
+    <div class="grid">
+        <div class="card">
+            <div class="card-header">
+                <h2>Category Breakdown</h2>
+            </div>
+            <div class="card-body">
+                <canvas id="categoryChart" style="max-height: 350px;"></canvas>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Category Details</h2>
+            </div>
+            <div class="card-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var category in Model.CategoryData)
+                        {
+                            <tr>
+                                <td><strong>@category.Category</strong></td>
+                                <td class="text-success">R @category.Amount.ToString("F2")</td>
+                                <td>
+                                    <div style="width: 100%; background-color: var(--light-gray); border-radius: 4px; overflow: hidden; height: 20px;">
+                                        <div style="width: @(category.Percentage)%; background-color: var(--primary-green); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 11px;">
+                                            @(category.Percentage > 10 ? category.Percentage + "%" : "")
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    @if (Model.Transactions != null && Model.Transactions.Count > 0)
+    {
+        <div class="card mt-20">
+            <div class="card-header">
+                <h2>Transactions</h2>
+            </div>
+            <div class="card-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var transaction in ((IEnumerable<Financial_System.Models.Transaction>)Model.Transactions)
+                                        .OrderByDescending(t => t.TransactionDate)
+                                        .Take(50))
+                        {
+                            <tr>
+                                <td>@transaction.TransactionDate.ToString("dd/MM/yyyy")</td>
+                                <td>@transaction.Description</td>
+                                <td>@(transaction.TransactionCategory?.CategoryName ?? "-")</td>
+                                <td class="text-danger">R @transaction.Amount.ToString("F2")</td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="card">
+        <div class="card-body text-center">
+            <p>No category data available for the selected period.</p>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        @if (Model?.CategoryData != null && Model.CategoryData.Count > 0)
+        {
+                <text>
+                const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+                    const categoryData = @Html.Raw(JsonSerializer.Serialize(Model.CategoryData));
+
+                const colors = [
+                    '#00AA44', '#00CC55', '#33DD77', '#66EE99', '#99FFBB',
+                    '#00BB55', '#00DD66', '#33EE88', '#66FFAA', '#99FFCC'
+                ];
+
+                new Chart(categoryCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: categoryData.map(d => d.Category),   // FIXED casing
+                        datasets: [{
+                            data: categoryData.map(d => d.Amount),   // FIXED casing
+                            backgroundColor: colors.slice(0, categoryData.length),
+                            borderColor: '#FFFFFF',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.label + ': R' + context.parsed.toFixed(2);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+                </text>
+        }
+    </script>
+}
