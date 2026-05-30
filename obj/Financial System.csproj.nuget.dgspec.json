@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial System\\Financial System\\Financial System\\Financial System.csproj": {}
+    "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial-System\\Financial System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial System\\Financial System\\Financial System\\Financial System.csproj": {
+    "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial-System\\Financial System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial System\\Financial System\\Financial System\\Financial System.csproj",
+        "projectUniqueName": "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial-System\\Financial System.csproj",
         "projectName": "Financial System",
-        "projectPath": "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial System\\Financial System\\Financial System\\Financial System.csproj",
+        "projectPath": "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial-System\\Financial System.csproj",
         "packagesPath": "C:\\Users\\Andiswa Mbonambi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial System\\Financial System\\Financial System\\obj\\",
+        "outputPath": "C:\\Users\\Andiswa Mbonambi\\Desktop\\Financial-System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
