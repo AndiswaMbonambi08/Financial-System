@@ -1,28 +1,56 @@
 # 💰 Financial System
 
-**Status:** In Progress 🚧
-
-A financial management application designed to handle transactions, reporting, and analytics for small teams or projects.
+A financial management web application for tracking income, expenses, accounts, and generating insightful reports.
 
 ---
 
-## 🌟 Vision
-To provide a lightweight, secure system for tracking income, expenses, and generating reports.
+## 🌟 Features
+
+- **Dashboard** — overview of total balance, accounts, income and expenses
+- **Account Management** — create, edit, view and delete financial accounts
+- **Transaction Management** — log income and expenses with categories and dates
+- **Reports** — summary reports, category analysis, and monthly trend charts
 
 ---
 
-## 🔧 Planned Tech Stack
-- ASP.NET Core MVC
+## 🔧 Tech Stack
+
+- ASP.NET Core MVC (.NET 8)
 - Entity Framework Core
 - SQLite database
-- C# backend logic
+- Chart.js for analytics
+- C# backend
 
 ---
 
-## 🚀 Next Steps
-- Define database schema
-- Implement transaction module
-- Build reporting dashboard
+## 🚀 Getting Started
+
+### Prerequisites
+- .NET 8 SDK
+- Visual Studio 2022 or VS Code
+
+### Run Locally
+
+```bash
+git clone https://github.com/AndiswaMbonambi08/Financial-System.git
+cd Financial-System
+dotnet run
+```
+
+Then open your browser and go to `http://localhost:5235`
+
+---
+
+## 📁 Project Structure
+
+Financial-System/
+├── Controllers/        # MVC Controllers
+├── Models/             # Database models
+├── ViewModels/         # View-specific models
+├── Services/           # Business logic
+├── Views/              # Razor views
+├── wwwroot/            # Static files (CSS, JS)
+└── Data/               # Database context and seeding
 
 ## Screenshots
 <img width="1713" height="1256" alt="Screenshot_31-5-2026_21659_localhost" src="https://github.com/user-attachments/assets/cb1b2edd-10bf-4da8-acba-daa9521e4988" />
