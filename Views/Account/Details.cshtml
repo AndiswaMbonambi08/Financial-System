@@ -1,0 +1,51 @@
+﻿@model Financial_System.Controllers.AccountDetailsViewModel
+@{
+    ViewData["Title"] = "Account Details";
+}
+<div class="d-flex justify-content-between align-items-center mb-20">
+    <h1>@Model.Account.Name</h1>
+    <a href="/Account" class="btn btn-secondary">Back to Accounts</a>
+</div>
+<div class="card mb-20">
+    <div class="card-body">
+        <p><strong>Type:</strong> @Model.Account.AccountType</p>
+        <p><strong>Balance:</strong> R @Model.Account.CurrentBalance.ToString("F2")</p>
+        <p><strong>Created:</strong> @Model.Account.CreatedDate.ToString("dd/MM/yyyy")</p>
+        <p><strong>Status:</strong> @(Model.Account.IsActive ? "Active" : "Inactive")</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header"><h2>Transactions</h2></div>
+    <div class="card-body">
+        @if (Model.Transactions != null && Model.Transactions.Count > 0)
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var t in Model.Transactions)
+                    {
+                        <tr>
+                            <td>@t.TransactionDate.ToString("dd/MM/yyyy")</td>
+                            <td>@t.Description</td>
+                            <td class="@(t.TransactionType == "Income" ? "text-success" : "text-danger")">
+                                R @t.Amount.ToString("F2")
+                            </td>
+                            <td>@t.TransactionType</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No transactions for this account.</p>
+        }
+    </div>
+</div>

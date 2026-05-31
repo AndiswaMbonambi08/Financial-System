@@ -1,0 +1,32 @@
+﻿@model Financial_System.Models.Transaction
+@{
+    ViewData["Title"] = "Edit Transaction";
+}
+<h1>Edit Transaction</h1>
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="/Transaction/Edit/@Model.TransactionId">
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" name="Description" value="@Model.Description" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label>Amount</label>
+                <input type="number" name="Amount" value="@Model.Amount" step="0.01" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label>Transaction Type</label>
+                <select name="TransactionType" class="form-control">
+                    <option value="Income" selected="@(Model.TransactionType == "Income")">Income</option>
+                    <option value="Expense" selected="@(Model.TransactionType == "Expense")">Expense</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" name="TransactionDate" value="@Model.TransactionDate.ToString("yyyy-MM-dd")" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/Transaction" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

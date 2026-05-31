@@ -20,64 +20,20 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Account/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXEFjY291bnRcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Account/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXEFjY291bnRcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Dashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Report/CategoryAnalysis.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFJlcG9ydFxDYXRlZ29yeUFuYWx5c2lzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Report/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFJlcG9ydFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Report/Summary.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFJlcG9ydFxTdW1tYXJ5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Transaction/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFRyYW5zYWN0aW9uXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Transaction/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFRyYW5zYWN0aW9uXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Account/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Account/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Account/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Account/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Account/Index.cshtml]
@@ -120,6 +76,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Transaction/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Transaction/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Transaction/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -131,10 +95,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Financial System/Financial System/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmluYW5jaWFsIFN5c3RlbVxGaW5hbmNpYWwgU3lzdGVtXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = b-27hh1jr6fs
 
 [C:/Users/Andiswa Mbonambi/Desktop/Financial-System/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Management System - Professional Finance Tracking</title>
-    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/site.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     @RenderSection("Styles", required: false)
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="navbar-brand">
-                <span style="color: var(--primary-green); margin-right: 5px;">&#9679;</span>
+            <div class="navbar-brand" style="margin: 0 auto;">
                 Financial System
             </div>
             <ul class="navbar-menu">
-                <li><a href="/" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Dashboard" ? "active" : "")">Dashboard</a></li>
-                <li><a href="/Account" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Account" ? "active" : "")">Accounts</a></li>
-                <li><a href="/Transaction" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Transaction" ? "active" : "")">Transactions</a></li>
-                <li><a href="/Report" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Report" ? "active" : "")">Reports</a></li>
+                <li><a href="/Transaction">Transaction Management</a></li>
+                <li><a href="/Account">Account Management</a></li>
+                <li><a href="/Report/Summary">Financial Reports</a></li>
+                <li><a href="/Report/CategoryAnalysis">Analytics Dashboard</a></li>
             </ul>
         </div>
     </nav>

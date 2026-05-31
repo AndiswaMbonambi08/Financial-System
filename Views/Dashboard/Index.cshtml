@@ -1,7 +1,7 @@
-﻿using Financial_System.ViewModels;
-@using Financial_System.ViewModels
+﻿@using Financial_System.ViewModels
 @using System.Text.Json
 @using System.Linq
+@model Financial_System.ViewModels.DashboardViewModel
 
 
 
@@ -22,13 +22,13 @@
 
     <div class="stat-box">
         <div class="stat-label">This Month Income</div>
-        <div class="stat-value" style="color: #00AA44;">R @(Model.MonthlyExpenses.FirstOrDefault()?.Income ?? 0).ToString("F2")</div>
+        <div class="stat-value" style="color: #00AA44;">R @((Model.MonthlyExpenses.FirstOrDefault()?.Income ?? 0).ToString("F2"))</div>
         <div class="stat-change positive">Tracked</div>
     </div>
 
     <div class="stat-box">
         <div class="stat-label">This Month Expenses</div>
-        <div class="stat-value" style="color: #D32F2F;">R @(Model.MonthlyExpenses.FirstOrDefault()?.Expenses ?? 0).ToString("F2")</div>
+        <div class="stat-value" style="color: #D32F2F;">R @((Model.MonthlyExpenses.FirstOrDefault()?.Expenses ?? 0).ToString("F2"))</div>
         <div class="stat-change">Spent</div>
     </div>
 </div>
@@ -98,7 +98,7 @@
                         @foreach (var account in Model.Accounts)
                         {
                             <tr>
-                                <td><strong>@account.AccountName</strong></td>
+                                <td><strong>@account.Name</strong></td>
                                 <td>@account.AccountType</td>
                                 <td class="text-success"><strong>R @account.CurrentBalance.ToString("F2")</strong></td>
                                 <td>

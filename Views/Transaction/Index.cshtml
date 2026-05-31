@@ -56,7 +56,7 @@
                             <td>@transaction.TransactionDate.ToString("dd/MM/yyyy")</td>
                             <td>@transaction.Description</td>
                             <td>@(transaction.TransactionCategory?.CategoryName ?? "-")</td>
-                            <td>@(transaction.Account.Name ?? "-")</td>
+                            <td>@(transaction.Account?.Name ?? "-")</td>
                             <td class="@(transaction.TransactionType == "Income" ? "text-success" : "text-danger")">
                                 <strong>R @transaction.Amount.ToString("F2")</strong>
                             </td>

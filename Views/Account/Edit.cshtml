@@ -1,0 +1,25 @@
+﻿@model Financial_System.Models.Account
+@{
+    ViewData["Title"] = "Edit Account";
+}
+<h1>Edit Account</h1>
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="/Account/Edit/@Model.AccountId">
+            <div class="form-group">
+                <label>Account Name</label>
+                <input type="text" name="Name" value="@Model.Name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label>Account Type</label>
+                <select name="AccountType" class="form-control">
+                    <option value="Savings" selected="@(Model.AccountType == "Savings")">Savings</option>
+                    <option value="Checking" selected="@(Model.AccountType == "Checking")">Checking</option>
+                    <option value="Investment" selected="@(Model.AccountType == "Investment")">Investment</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/Account" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

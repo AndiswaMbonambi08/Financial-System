@@ -1,0 +1,15 @@
+﻿@model Financial_System.Models.Transaction
+@{
+    ViewData["Title"] = "Delete Transaction";
+}
+<h1>Delete Transaction</h1>
+<div class="card">
+    <div class="card-body">
+        <p>Are you sure you want to delete <strong>@Model.Description</strong>?</p>
+        <p>Amount: R @Model.Amount.ToString("F2")</p>
+        <form method="post" action="/Transaction/DeleteConfirmed/@Model.TransactionId">
+            <button type="submit" class="btn btn-danger">Yes, Delete</button>
+            <a href="/Transaction" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

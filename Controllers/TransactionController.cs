@@ -29,7 +29,7 @@ namespace Financial_System.Controllers
                 transactions = transactions.Where(t => t.AccountId == accountId).ToList();
 
             if (!string.IsNullOrEmpty(category))
-                transactions = transactions.Where(t => t.TransactionCategory.CategoryName == category).ToList();
+                transactions = transactions.Where(t => t.TransactionCategory?.CategoryName == category).ToList();
 
             var totalCount = transactions.Count();
             var pagedTransactions = transactions
